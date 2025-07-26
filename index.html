@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toko Hasil Tani Desa</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>Toko Hasil Tani Desa</h1>
+    <nav>
+      <ul>
+        <li><a href="#produk">Produk</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+        <li><a href="#keranjang">Keranjang</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="produk">
+    <h2>Produk Unggulan</h2>
+    <div class="produk-list">
+      <div class="produk">
+        <img src="images/kopi.jpg" alt="Kopi Bubuk Desa">
+        <h3>Kopi Bubuk Desa</h3>
+        <p>100gr - Rp25.000</p>
+        <button onclick="tambahKeKeranjang('Kopi Bubuk Desa', 25000)">Tambah</button>
+      </div>
+      <div class="produk">
+        <img src="images/madu.jpg" alt="Madu Hutan Asli">
+        <h3>Madu Hutan Asli</h3>
+        <p>500ml - Rp60.000</p>
+        <button onclick="tambahKeKeranjang('Madu Hutan Asli', 60000)">Tambah</button>
+      </div>
+      <!-- Tambahkan produk lain di sini -->
+    </div>
+  </section>
+
+  <section id="keranjang">
+    <h2>Keranjang Belanja</h2>
+    <ul id="daftar-keranjang"></ul>
+    <p>Total: Rp<span id="total-harga">0</span></p>
+  </section>
+
+  <section id="kontak">
+    <h2>Formulir Pemesanan</h2>
+    <form id="form-pemesanan">
+      <input type="text" name="nama" placeholder="Nama Lengkap" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="tel" name="kontak" placeholder="Nomor HP" required>
+      <textarea name="alamat" placeholder="Alamat Lengkap" required></textarea>
+      <button type="submit">Kirim Pesanan</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Toko Hasil Tani Desa</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
